@@ -36,7 +36,7 @@ const playRound = (playerSelection, computerSelction) => {
     } else if (!playerSelection) {
         console.log('please enter valid input')
         return
-    } else if (game_items.includes(playerSelection)) {
+    } else if (!game_items.includes(playerSelection)) {
         console.log('please pick valid value from rock/paper/scissor')
         return
     }
