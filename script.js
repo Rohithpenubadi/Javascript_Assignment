@@ -33,10 +33,7 @@ const playRound = (playerSelection, computerSelction) => {
             console.log('Scissors cuts paper! You lose.')
             return 'computer';
         }
-    } else if (!playerSelection) {
-        console.log('please enter valid value from rock/paper/scissor')
-        return
-    } else if (!game_items.includes(playerSelection)) {
+    } else if (!playerSelection || !game_items.includes(playerSelection)) {
         console.log('please pick valid value from rock/paper/scissor')
         return
     }
